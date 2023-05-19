@@ -1,0 +1,126 @@
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.bold {
+  font-style: italic;
+
+}
+
+.Title {
+  text-align: center;
+  margin: 2rem
+}
+
+.distance {
+  margin-bottom: 2rem;
+  padding-left: 4rem !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+.margin {
+  margin-bottom: 7rem;
+}
+
+a:hover {
+  color: red !important;
+
+}
+
+
+
+
+#mtCarousel .carousel-item {
+  height: 25rem;
+}
+
+@media screen and (min-width:1024px) {
+
+  #mtCarousel .carousel-item {
+      height: 35rem;
+  }
+
+}
+
+
+
+
+
+.container {
+  --bs-gutter-x: 0rem;
+  overflow-x: hidden;
+}
+
+.m {
+  margin-top: 0.02rem;
+}
+
+.circle {
+  height: 230px;
+  width: 230px;
+  object-fit: cover;
+}
+
+
+
+
+.orizontal {
+  border: 1px solid rgba(0, 0, 0, 0.529);
+  margin: 3rem
+}
+
+.Pian {
+  width: 90%;
+  height: 100%;
+padding: 1rem;
+  object-fit: cover;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+h1 {
+  color: red;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+h3 {
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.start {
+  padding: 0.5rem;
+  text-align: start;
+
+
+}
+body {
+  overflow-x: hidden;
+
+}
+
+.red {
+  color: red;
+}
+.offcanvas-title{
+  color: red;
+}
+.nav-link{
+  color:black !important
+}
