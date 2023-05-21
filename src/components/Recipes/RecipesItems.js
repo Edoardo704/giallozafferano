@@ -26,7 +26,7 @@ const RecipesItems = ({ recipes, deleteSuccess }) => {
           </div>
           <div className="col-md-6">
             <p>
-              <b>DESCRIPTION:</b> {recipes.description}
+              <b>Description:</b> {recipes.description}
               <hr />
               <b>Time Preparation:</b> {recipes.timePreparation + " Minuti " || ""}
               <hr />

@@ -6,10 +6,13 @@ import "../Home/style.scss";
 import calici from "../Foto/calici vino.webp"
 import pasta from "../Foto/pasta.jpg"
 
+
+
+
 const Home = () => {
   const base64prefix = "data:image/jpeg;base64,";
 
-  const { data: recipes, loading, error } = useGet("http://localhost:3432/recipes");
+  const { data: recipes } = useGet("http://localhost:3432/recipes");
 
   const [index, setIndex] = useState(0);
 
@@ -55,14 +58,13 @@ const Home = () => {
               </div>
             </div>
           ))}
-          <hr className="orizontal" />
-          <div className="text-center mt-5">
-            <Link to="/recipes" className="btn btn-primary">Personalizza</Link>
+          <div className="text-center mt-2">
+            <Link to="/recipes" className="btn btn-light mb-5">Personalizza</Link>
           </div>
         </section>
       </div>
 
-
+    
     </>
   );
 }

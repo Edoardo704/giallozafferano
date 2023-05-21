@@ -42,12 +42,12 @@ const CategoryItem = ({ category, deleteSuccess }) => {
                                     <Alert.Heading>Eliminare {category.name}?</Alert.Heading>
                                     {recipes && recipes.length > 0 ? (
 
-                                        <p>Verranno eliminate anche le {recipes.length} canzoni vuoi procedere?</p>
+                                        <p>Verranno eliminate anche le {recipes.length} ricette vuoi procedere?</p>
                                     ) : " "}
 
-                                    <button className='btn btn-secondary m-2 ' onClick={performDelete}>Conferma </button>
+                                    
                                     <div className='d-flex justify-content-end'>
-
+                                    <button className='btn btn-secondary btn-sm m-2 ' onClick={performDelete}>Conferma </button>
                                         <button onClick={() => setShowDelete(false)} className='btn btn-outline-success  m-2'>Annulla</button>
                                     </div>
                                 </Alert>
