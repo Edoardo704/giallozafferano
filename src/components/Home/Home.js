@@ -50,7 +50,6 @@ const Home = () => {
                 <h5 className='red'> Difficoltà:</h5>
                 <p>{recipe.difficulty}</p>
               </div>
-
               <div className="col-md-5 ">
                 <img src={base64prefix + recipe.cover} className="img-fluid fluid" alt="Recipe" />
               </div>

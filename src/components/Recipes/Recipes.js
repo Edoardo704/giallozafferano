@@ -7,7 +7,7 @@ import Alert from "../Alert/Alert";
 import { Link } from "react-router-dom";
 
 const Recipes = () => {
-  const { data, error, isLoading, mutate } = useGet("http://localhost:3432/recipes")
+  const { data,  isLoading, mutate } = useGet("http://localhost:3432/recipes")
 
   const [alertShow, setAlertShow] = useState(false)
   const [alertMessage, setAlertMessage] = useState("")
@@ -51,12 +51,6 @@ const Recipes = () => {
   else if (isLoading) {
     <div>Loading.....</div> // possiamo mettere un loader a tutto schermo
   }
-
-  else if (error) {
-    <div>Errore di caricamento</div> // renderizzare un errore di caricamento con un componente oppure renderizzare una pagina di errore
-  }
-
-
 }
 
 

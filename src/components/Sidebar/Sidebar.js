@@ -27,7 +27,7 @@ const Sidebar = () => {
 
             </Navbar>
 
-
+         
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Menù</Offcanvas.Title>
@@ -44,11 +44,12 @@ const Sidebar = () => {
                         <li className='nav-item'>
                             <Link to="/category" className="nav-link" onClick={handleClose}>Category</Link>
                         </li>
-
-
                     </ul>
                 </Offcanvas.Body>
             </Offcanvas>
+            
+
+            
         </>
     )
 }
