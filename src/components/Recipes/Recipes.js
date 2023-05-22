@@ -34,7 +34,7 @@ const Recipes = () => {
         <Link className="btn btn-outline-dark btn-sm d-flex justify-content-center m-3" to="new" >Nuova Ricetta</Link>
         <article className='container'>
           <div className="row">
-            {/* context prende degli oggetti come parametri */}
+           
             {data.map(recipes => (
               <div key={recipes.id} className="col-12">
                 <RecipesItems recipes={recipes} deleteSuccess={deleteSuccess}></RecipesItems>

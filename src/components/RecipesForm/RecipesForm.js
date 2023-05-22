@@ -59,7 +59,7 @@ const RecipesForm = ({ data = {}, mutate }) => {
 
 
   const getBase64 = async (file) => {
-    var reader = new FileReader(); // creo il file render per leggere il file
+    var reader = new FileReader(); 
 
     await reader.readAsDataURL(file);
     reader.onload = function () {
@@ -77,6 +77,12 @@ const RecipesForm = ({ data = {}, mutate }) => {
   }
 
 
+  const submitSuccess = (e) => {
+    setAlertMessage("Salvataggio effettuato")
+    setalertShow(true);
+
+  }
+
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -93,8 +99,6 @@ const RecipesForm = ({ data = {}, mutate }) => {
       getBase64(e.target.files[0])
     }
     else {
-
-
       setRecipes((prevValues) => {
         return {
           ...prevValues,
@@ -102,14 +106,6 @@ const RecipesForm = ({ data = {}, mutate }) => {
         }
       })
     }
-  }
-
-
-
-  const submitSuccess = (e) => {
-    setAlertMessage("Salvataggio effettuato")
-    setalertShow(true);
-
   }
 
   const alertDismiss = () => {
